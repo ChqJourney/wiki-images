@@ -1,0 +1,83 @@
+<svg viewBox="0 0 680 620" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+    </style>
+    <marker id="arrowHead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#555"/>
+    </marker>
+  </defs>
+
+  <rect width="680" height="620" rx="10" fill="#FAFBFC" stroke="#E1E4E8" stroke-width="1"/>
+
+  <!-- Title -->
+  <text x="340" y="30" text-anchor="middle" font-size="18" font-weight="700" fill="#1a1a2e">IEC 60335-1 耐压测试流程总图</text>
+
+  <!-- === TYPE TEST BRANCH === -->
+  <rect x="30" y="50" width="290" height="25" rx="5" fill="#E65100" opacity="0.15"/>
+  <text x="175" y="68" text-anchor="middle" font-size="14" font-weight="700" fill="#E65100">型式试验 (Type Test)</text>
+
+  <!-- Clause 13 box -->
+  <rect x="40" y="90" width="270" height="90" rx="8" fill="#FFF3E0" stroke="#FFB74D" stroke-width="1.5"/>
+  <text x="175" y="112" text-anchor="middle" font-size="13" font-weight="600" fill="#E65100">Clause 13 — 热态</text>
+  <text x="175" y="132" text-anchor="middle" font-size="11" fill="#555">产品工作至稳定温度</text>
+  <text x="175" y="150" text-anchor="middle" font-size="11" fill="#D84315" font-weight="600">测泄漏电流 → 耐压 1 min</text>
+  <text x="175" y="168" text-anchor="middle" font-size="11" fill="#888">电压: Table 4 | 判据: 无击穿</text>
+
+  <line x1="175" y1="180" x2="175" y2="200" stroke="#555" stroke-width="1.5" marker-end="url(#arrowHead)"/>
+
+  <!-- Clause 15/16 box -->
+  <rect x="40" y="200" width="270" height="100" rx="8" fill="#E3F2FD" stroke="#90CAF9" stroke-width="1.5"/>
+  <text x="175" y="222" text-anchor="middle" font-size="13" font-weight="600" fill="#1565C0">Clause 16 — 冷态</text>
+  <text x="175" y="242" text-anchor="middle" font-size="11" fill="#555">潮湿处理 48h / 93%RH</text>
+  <text x="175" y="260" text-anchor="middle" font-size="11" fill="#555">(Clause 15.3)</text>
+  <text x="175" y="278" text-anchor="middle" font-size="11" fill="#0D47A1" font-weight="600">测泄漏电流 → 耐压 1 min</text>
+  <text x="175" y="296" text-anchor="middle" font-size="11" fill="#888">电压: Table 7 | 判据: 无击穿</text>
+
+  <!-- = DIVIDER == -->
+  <line x1="340" y1="55" x2="340" y2="500" stroke="#E0E0E0" stroke-width="2" stroke-dasharray="6,4"/>
+
+  <!-- === ROUTINE TEST BRANCH === -->
+  <rect x="370" y="50" width="270" height="25" rx="5" fill="#1565C0" opacity="0.12"/>
+  <text x="505" y="68" text-anchor="middle" font-size="14" font-weight="700" fill="#1565C0">生产试验 (Routine Test)</text>
+
+  <!-- Annex A boxes -->
+  <rect x="380" y="90" width="250" height="55" rx="8" fill="#F0F7FF" stroke="#64B5F6" stroke-width="1.5"/>
+  <text x="505" y="112" text-anchor="middle" font-size="13" font-weight="600" fill="#1565C0">A.2 接地连续性</text>
+  <text x="505" y="132" text-anchor="middle" font-size="11" fill="#555">10A / ≤12V / ≤0.1Ω (或0.2Ω)</text>
+
+  <line x1="505" y1="145" x2="505" y2="165" stroke="#555" stroke-width="1.5" marker-end="url(#arrowHead)"/>
+
+  <rect x="380" y="165" width="250" height="75" rx="8" fill="#F0F7FF" stroke="#64B5F6" stroke-width="1.5"/>
+  <text x="505" y="187" text-anchor="middle" font-size="13" font-weight="600" fill="#1565C0">A.3 耐压测试</text>
+  <text x="505" y="207" text-anchor="middle" font-size="11" fill="#0D47A1" font-weight="600">耐压 1 秒</text>
+  <text x="505" y="225" text-anchor="middle" font-size="11" fill="#888">电压: Table A.1 | 判据: I > 5mA</text>
+
+  <line x1="505" y1="240" x2="505" y2="260" stroke="#555" stroke-width="1.5" marker-end="url(#arrowHead)"/>
+
+  <rect x="380" y="260" width="250" height="55" rx="8" fill="#F0F7FF" stroke="#64B5F6" stroke-width="1.5"/>
+  <text x="505" y="282" text-anchor="middle" font-size="13" font-weight="600" fill="#1565C0">A.4 功能测试</text>
+  <text x="505" y="302" text-anchor="middle" font-size="11" fill="#555">目视检查/功能验证</text>
+
+  <!-- = COMMON SECTION == -->
+  <rect x="120" y="360" width="440" height="80" rx="10" fill="#E8F5E9" stroke="#81C784" stroke-width="1.5"/>
+  <text x="340" y="385" text-anchor="middle" font-size="14" font-weight="700" fill="#2E7D32">共通要点</text>
+  <text x="340" y="407" text-anchor="middle" font-size="11" fill="#555">• 测试电压频率: 50/60 Hz, 正弦波</text>
+  <text x="340" y="425" text-anchor="middle" font-size="11" fill="#555">• 参照 IEC 61180-1 高压测试方法</text>
+
+  <!-- Difference highlights -->
+  <rect x="100" y="465" width="480" height="135" rx="10" fill="#FFF3E0" stroke="#FFB74D" stroke-width="1.5"/>
+  <text x="340" y="490" text-anchor="middle" font-size="14" font-weight="700" fill="#E65100">⚠ 三大核心差异</text>
+
+  <circle cx="130" cy="510" r="8" fill="#E65100"/>
+  <text x="130" y="514" text-anchor="middle" font-size="11" fill="#fff" font-weight="700">1</text>
+  <text x="148" y="514" text-anchor="start" font-size="11" fill="#555">型式试验 <tspan font-weight="700" fill="#D84315">1分钟</tspan>，生产试验仅 <tspan font-weight="700" fill="#D84315">1秒</tspan></text>
+
+  <circle cx="130" cy="536" r="8" fill="#E65100"/>
+  <text x="130" y="540" text-anchor="middle" font-size="11" fill="#fff" font-weight="700">2</text>
+  <text x="148" y="540" text-anchor="start" font-size="11" fill="#555">型式试验电压 <tspan font-weight="700" fill="#D84315">更高</tspan>（如 1000V→1250V vs 800V→1000V）</text>
+
+  <circle cx="130" cy="562" r="8" fill="#E65100"/>
+  <text x="130" y="566" text-anchor="middle" font-size="11" fill="#fff" font-weight="700">3</text>
+  <text x="148" y="566" text-anchor="start" font-size="11" fill="#555">生产试验可用 <tspan font-weight="700" fill="#D84315">DC 电压 (1.5×)</tspan> 替代 AC，且判定电流更明确 (5mA)</text>
+</svg>
